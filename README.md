@@ -1,5 +1,9 @@
 # mini-proj1
 
+A tarefa 2.2 corresponde ao primeiro desenvolvimento web da unidade curricular. Esta programação pretende verificar os conhecimentos anteriores relativos à construção de uma página HTML básica, com o acrescido do conceitos de Single Page Application (SPA).
+
+<img src="@/assets/printscreen.PNG">
+
 ## Project setup
 ```
 npm install
@@ -13,11 +17,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration

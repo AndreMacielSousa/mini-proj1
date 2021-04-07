@@ -1,32 +1,52 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <Header nome="André Maciel Sousa"></Header>
+    <router-view class="corpo"></router-view>
+     <Footer />
   </div>
 </template>
 
+<script>
+import Footer from "@/components/Footer.vue";
+import Header from "@/components/Header.vue";
+export default {
+  name: "App",
+  components: {
+    Footer,
+    Header,
+  },
+};
+</script>
+
 <style>
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family:sans-serif;
+  font-size: 12px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:97vh;  
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#nav {
-  padding: 30px;
+a {
+  text-decoration: none;
+}
+.corpo{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    padding: 36px 0;
+    text-align: center;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
