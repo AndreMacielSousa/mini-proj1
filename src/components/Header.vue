@@ -34,7 +34,7 @@ export default {
 
 li.name {
   float: left;
-  font-size: 14px;
+  font-size: 18px;
 }
 li.item {
   float: right;
